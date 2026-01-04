@@ -1,0 +1,6 @@
+Covariate,Hazard Ratio,CI Lower (95%),CI Upper (95%),p-value
+totmembers,0.949,0.942,0.957,0.0
+o2used,0.179,0.164,0.196,0.0
+primrte,0.409,0.304,0.551,0.0
+season_Winter,0.95,0.807,1.118,0.5357
+season_Summer,0.802,0.575,1.118,0.193
