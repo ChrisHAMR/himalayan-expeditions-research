@@ -1,71 +1,82 @@
 # Himalayan Expeditions Research — Statistical Modeling Case Study
 
-This project is a **secondary research case study** demonstrating the application of statistical methods to a complex, non-financial dataset.
+This repository presents a **secondary statistical research case study** designed
+to demonstrate the application of modern statistical methods to a complex,
+non-financial dataset.
 
-Using a comprehensive Himalayan expeditions dataset, the project illustrates an end-to-end statistical workflow — from data cleaning and exploratory analysis to survival modeling and predictive methods — with a focus on uncertainty, censoring, and real-world data complexity.
-
-The primary purpose of this repository is to show **methodological transferability** of statistical skills beyond financial applications.
+Using a comprehensive dataset of Himalayan expeditions, the project illustrates
+an end-to-end analytical workflow—from data validation and exploratory analysis
+to formal survival modeling—emphasizing uncertainty, censoring, and real-world
+data limitations. The primary objective is to demonstrate **methodological
+transferability** of statistical skills beyond financial applications.
 
 ---
 
 ## Dataset Description
 
-The dataset contains expedition-level and climber-level information on Himalayan expeditions, including:
+The dataset contains expedition-level information on Himalayan expeditions,
+including:
 
-- expedition characteristics  
-- climber demographics and experience  
-- routes, seasons, and peaks  
-- summit outcomes  
+- expedition characteristics and logistics  
+- routes, seasons, and host regions  
+- team composition and oxygen use  
+- summit outcomes and expedition termination  
 - fatality and survival indicators  
 
-The dataset includes approximately **65 variables** with mixed data types and non-trivial missingness patterns.
+The dataset comprises approximately **11,400 expeditions** with **65 variables**,
+spanning more than a century of Himalayan climbing history. Variables exhibit
+mixed data types and substantial, structured missingness reflective of real-world
+reporting practices.
 
-(See `Himalayan Expeditions.xlsx` for raw data structure.)
+(See `data/raw/Himalayan Expeditions.xlsx` for the original data structure.)
 
 ---
 
 ## Project Phases
 
-### Phase 1 — Data Foundation
-- Data loading, cleaning, and documentation  
-- Handling missing values and inconsistencies  
+### Phase 1 — Data Foundation ✅ *Completed*
+- Data ingestion, cleaning, and documentation  
+- Identification and characterization of missingness patterns  
 - Exploratory data analysis (EDA)  
-- Identification of imbalance and temporal patterns  
+- Assessment of temporal structure, imbalance, and data limitations  
 
-_No modeling is performed in this phase._
+_No statistical modeling is performed in this phase; the focus is strictly on
+data integrity and transparency._
 
 ---
 
-### Phase 2 — Statistical Modeling (Survival Analysis)
-- Kaplan–Meier survival curves  
-- Cox proportional hazards model  
+### Phase 2 — Statistical Modeling (Survival Analysis) ✅ *Completed*
+- Kaplan–Meier survival estimation  
+- Log-rank tests for group comparisons  
+- Cox proportional hazards modeling  
 - Hazard ratio interpretation  
 - Survival comparisons by:
   - season  
-  - nationality  
+  - expedition nationality  
   - route characteristics  
 
-This phase focuses on **time-to-event modeling under censoring**.
+This phase models expedition outcomes using a **time-to-event framework under
+right-censoring**, with diagnostic validation of modeling assumptions.
 
 ---
 
-### Phase 3 — Advanced Modeling (Predictive Analysis)
+### Phase 3 — Advanced Modeling (Predictive Analysis) 🚧 *Planned*
 - Logistic regression for summit success prediction  
-- Random forest classifier  
+- Random forest classification  
 - Feature importance analysis  
 - Predicted probability distributions  
-- Model comparison  
+- Comparative model evaluation  
 
-Predictive modeling is used here as a complement to inferential analysis.
+Predictive modeling is used as a complement to inferential analysis, emphasizing
+probabilistic interpretation rather than pure classification accuracy.
 
 ---
 
-### Phase 4 — Final Documentation
-- Abstract  
-- Introduction  
-- Methods  
-- Results and figures  
-- Conclusion  
+### Phase 4 — Final Documentation 🚧 *Planned*
+- Abstract and structured introduction  
+- Methods and results sections  
+- Consolidated figures and tables  
+- Concise conclusion  
 - Final repository organization  
 
 ---
@@ -75,18 +86,19 @@ Predictive modeling is used here as a complement to inferential analysis.
 This project emphasizes:
 
 - survival analysis and censoring  
-- hazard modeling and interpretation  
-- probabilistic prediction  
-- uncertainty-aware modeling  
-- reproducible research workflow  
+- hazard-based risk modeling  
+- probabilistic prediction under uncertainty  
+- model comparison and interpretation  
+- reproducible research workflows  
 
-The goal is **demonstration of statistical competency**, not domain specialization in mountaineering research.
+The goal is **demonstration of statistical competency and methodological rigor**,
+not domain specialization in mountaineering research.
 
 ---
 
 ## Disclaimer
 
-This project is intended for academic and research purposes only.  
+This project is intended for academic and research demonstration purposes only.  
 All analyses are observational and do not imply causal conclusions.
 
 ---
